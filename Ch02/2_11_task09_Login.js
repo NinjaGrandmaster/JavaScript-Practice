@@ -18,3 +18,23 @@
     Hint: passing an empty input to a prompt returns an empty string ''. 
     Pressing ESC during a prompt returns null.
 */
+
+let loginName = prompt("Who's there?", '');
+
+if (loginName === "Admin") {
+
+    let password = prompt("Password?", '');
+
+    if (password === "TheMaster") {
+        alert("Welcome!");
+    } else if (password === '' || password === null) {
+        alert("Canceled");
+    } else {
+        alert("Wrong password");
+    }
+
+} else if (loginName === '' || loginName === null) {
+    alert("Canceled");
+} else {
+    alert("I don't know you");
+}
