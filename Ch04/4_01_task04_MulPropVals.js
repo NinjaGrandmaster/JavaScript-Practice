@@ -27,7 +27,7 @@
 */
 
 // function prints an object to console
-function printToObjConsole(obj) {
+function printObjToConsole(obj) {
     for (let key in obj) {
         console.log("" + key + " : " + obj[key]);
     }
@@ -51,9 +51,9 @@ let menu = {
 };
 
 console.log("Before");
-printToObjConsole(menu);
+printObjToConsole(menu);
 
 multiplyNumeric(menu);
 
 console.log("After");
-printToObjConsole(menu);
+printObjToConsole(menu);
